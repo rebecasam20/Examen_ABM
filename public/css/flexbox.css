@@ -1,0 +1,26 @@
+.containerRe{
+    width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.itemRe{
+    flex:none;
+    width: calc((100% - 10xp) / 2);
+    margin-bottom: 10px;
+
+    @media screen and(min-width: 400px){
+        width: calc((100% - 20xp) / 3) ;
+    }
+    
+    @media screen and(min-width: 600px){
+        width: calc((100% - 30xp) / 4) ;
+    }
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em 0;
+}
